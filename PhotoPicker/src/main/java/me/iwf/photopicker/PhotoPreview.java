@@ -51,8 +51,8 @@ public class PhotoPreview {
          * @param fragment    Fragment to receive result
          * @param requestCode requestCode for result
          */
-        public void start(@NonNull Context context, @NonNull android.support.v4.app.Fragment fragment, int requestCode) {
-            fragment.startActivityForResult(getIntent(context), requestCode);
+        public void start(@NonNull android.support.v4.app.Fragment fragment, int requestCode) {
+            fragment.startActivityForResult(getIntent(fragment.getContext()), requestCode);
         }
 
         /**
@@ -60,8 +60,8 @@ public class PhotoPreview {
          *
          * @param fragment Fragment to receive result
          */
-        public void start(@NonNull Context context, @NonNull android.support.v4.app.Fragment fragment) {
-            fragment.startActivityForResult(getIntent(context), REQUEST_CODE);
+        public void start(@NonNull android.support.v4.app.Fragment fragment) {
+            fragment.startActivityForResult(getIntent(fragment.getContext()), REQUEST_CODE);
         }
 
         /**
