@@ -43,9 +43,9 @@ dependencies {
     implementation 'com.github.xuexiangjys:PhotoPicker:1.0.1'
     implementation "com.github.bumptech.glide:glide:4.8.0"
     
-    implementation 'com.android.support:appcompat-v7:23.4.0'
-    implementation 'com.android.support:recyclerview-v7:23.4.0'
-    implementation 'com.android.support:design:23.4.0'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
 }
 ```
 * ```appcompat-v7```version >= 23.0.0
