@@ -25,14 +25,27 @@
 
 ### Gradle
 
-```groovy
+1.先在项目根目录的 build.gradle 的 repositories 添加:
+
+```
+allprojects {
+     repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
+2.然后在dependencies添加:
+
+```
 dependencies {
-    compile 'me.iwf.photopicker:PhotoPicker:0.9.12@aar'
+    implementation 'com.github.xuexiangjys:PhotoPicker:1.0.1'
+    implementation "com.github.bumptech.glide:glide:4.8.0"
     
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:recyclerview-v7:23.4.0'
-    compile 'com.android.support:design:23.4.0'
-    compile 'com.github.bumptech.glide:glide:4.1.1'
+    implementation 'com.android.support:appcompat-v7:23.4.0'
+    implementation 'com.android.support:recyclerview-v7:23.4.0'
+    implementation 'com.android.support:design:23.4.0'
 }
 ```
 * ```appcompat-v7```version >= 23.0.0
