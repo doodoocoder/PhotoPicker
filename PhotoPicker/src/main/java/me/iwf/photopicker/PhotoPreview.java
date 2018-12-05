@@ -65,6 +65,27 @@ public class PhotoPreview {
         }
 
         /**
+         * Send the Intent with a custom request code
+         *
+         * @param fragment    Fragment to receive result
+         * @param requestCode requestCode for result
+         */
+        @Deprecated
+        public void start(@NonNull Context context, @NonNull android.support.v4.app.Fragment fragment, int requestCode) {
+            fragment.startActivityForResult(getIntent(context), requestCode);
+        }
+
+        /**
+         * Send the Intent with a custom request code
+         *
+         * @param fragment Fragment to receive result
+         */
+        @Deprecated
+        public void start(@NonNull Context context, @NonNull android.support.v4.app.Fragment fragment) {
+            fragment.startActivityForResult(getIntent(context), REQUEST_CODE);
+        }
+
+        /**
          * Send the crop Intent from an Activity
          *
          * @param activity Activity to receive result
